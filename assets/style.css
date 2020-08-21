@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
-@font-face{font-family:'intro';src:url(fonts/Intro-Regular.otf);font-weight:400}
-@font-face{font-family:'intro';src:url(fonts/Intro-Bold.otf);font-weight:700}
+@font-face{font-family:'xxx';src:url(fonts/xxx-Regular.otf);font-weight:400}
+@font-face{font-family:'xxx';src:url(fonts/xxx-Bold.otf);font-weight:700}
 
 *{box-sizing:border-box;outline:none}
 html,body{margin:0;padding:0}
 
 html{font-size:10px;}
 body{
-	font-family:'intro',sans-serif;
+	font-family:'xxx',sans-serif;
 	font-weight:400;
 	overflow-y:scroll;
 }
