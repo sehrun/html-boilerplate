@@ -1,4 +1,5 @@
 <?php
+exit;
 $key = '_xxx';
 if(empty($_GET['key']) || $_GET['key']!=$key){
 	exit;
