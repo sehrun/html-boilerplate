@@ -61,9 +61,6 @@ if (!empty($_POST['cmd'])) {
             <pre class=""><div>rm -rf /var/www/domains/test/*</div>
             <div>find . -cmin -400 -not -path "./system/*" -not -path "./export/*" -exec cp --parents \{\} /var/www/domains/test \;</div>
             <div>chown -R apache:apache /var/www/domains/test</div></pre>
-			<pre>
-			<div class="">rm -rf /var/www/domains/lustramdev.ru</div>
-			<div class="">rsync -avq /var/www/domains/lustram.ru/. /var/www/domains/lustramdev.ru/ --exclude admin --exclude export --exclude tralzor7 --exclude oldpages</div></pre>
         </div>
 
         <form method="POST">
