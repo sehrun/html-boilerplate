@@ -57,6 +57,7 @@ if (!empty($_POST['cmd'])) {
 			<div class="">grep -rn 'catalog' -e 'xxx'</div>
 			<div class="">find '/etc/' -name '*.conf'</div>
 			<div class="">zip -qr filename.zip folderToZipPath</div>
+			<div class="">find . -cmin -400 -print | zip newZipFile.zip -@</div>
 			</pre>
             <pre>find catalog -type f -print0 | xargs -0 sed -i '' -e 's/что меняем/на что меняем/g'</pre>
             <pre class=""><div>rm -rf /var/www/domains/test/*</div>
