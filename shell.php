@@ -58,6 +58,8 @@ if (!empty($_POST['cmd'])) {
 			<div class="">find '/etc/' -name '*.conf'</div>
 			<div class="">zip -qr filename.zip folderToZipPath</div>
 			<div class="">find . -cmin -400 -print | zip newZipFile.zip -@</div>
+			<div class="">zip -r /var/www/domains/lustram.ru/system/storage/logs/filename.zip /var/www/domains/lustram.ru/system/storage/logs</div>
+			<div class="">split -l 200000 /var/www/domains/lustram.ru/system/storage/logs/error.log /var/www/domains/lustram.ru/system/storage/logs/</div>			
 			</pre>
             <pre>find catalog -type f -print0 | xargs -0 sed -i '' -e 's/что меняем/на что меняем/g'</pre>
             <pre class=""><div>rm -rf /var/www/domains/test/*</div>
