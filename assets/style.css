@@ -16,8 +16,11 @@ body{
 	blue: hsl(227, 76%, 31%)
 \*------------------------------------*/
 
-.cw{
-	width:942px;
+.cwidth{
+	width:100%;
+	max-width:972px;
+	padding-left:15px;
+	padding-right:15px;
 	margin-left:auto;
 	margin-right:auto;
 }
