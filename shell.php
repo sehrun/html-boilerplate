@@ -38,8 +38,12 @@ if (!empty($_POST['cmd'])) {
         }
 
         .container {
-            width: 850px;
+            max-width:960px;
+			padding-bottom:20rem;
         }
+		.ce{cursor:pointer}
+		.ce:hover{background: aliceblue;}
+		.form-control{font-size:1rem}
     </style>
 
 </head>
@@ -53,18 +57,21 @@ if (!empty($_POST['cmd'])) {
             <h2> Execute a command </h2>
             <pre>
 			<div class=""><?=__DIR__;?></div>
-			<div class="">grep -rn --include=\*.php 'wp-content' -e 'Template Name'</div>
-			<div class="">grep -rn 'catalog' -e 'xxx'</div>
-			<div class="">find '/etc/' -name '*.conf'</div>
-			<div class="">zip -qr filename.zip folderToZipPath</div>
-			<div class="">find . -cmin -400 -print | zip newZipFile.zip -@</div>
-			<div class="">zip -r /var/www/domains/lustram.ru/system/storage/logs/filename.zip /var/www/domains/lustram.ru/system/storage/logs</div>
-			<div class="">split -l 200000 /var/www/domains/lustram.ru/system/storage/logs/error.log /var/www/domains/lustram.ru/system/storage/logs/</div>			
+			<div class="ce">grep -rn --include=\*.php 'wp-content' -e 'Template Name'</div>
+			<div class="ce">grep -rn 'catalog' -e 'xxx'</div>
+			<div class="ce">find '/etc/' -name '*.conf'</div>
+			<div class="ce">zip -qr filename.zip folderToZipPath</div>
+			<div class="ce">find . -cmin -400 -print | zip newZipFile.zip -@</div>
+			<div class="ce">unzip -o filename.zip -d temp -x '\.*' '*/\.*'; echo $?</div>
+			<div class="ce">zip -r /var/www/domains/lustram.ru/system/storage/logs/filename.zip /var/www/domains/lustram.ru/system/storage/logs</div>
+			<div class="ce">split -l 200000 /var/www/domains/lustram.ru/system/storage/logs/error.log /var/www/domains/lustram.ru/system/storage/logs/</div>
+			<div class="ce">grep -rn 'system/storage/logs/' -e 'extractZip'</div>
+			<div class="ce">tail -n 10 'system/storage/logs/error.log'</div>
 			</pre>
             <pre>find catalog -type f -print0 | xargs -0 sed -i '' -e 's/что меняем/на что меняем/g'</pre>
-            <pre class=""><div>rm -rf /var/www/domains/test/*</div>
-            <div>find . -cmin -400 -not -path "./system/*" -not -path "./export/*" -exec cp --parents \{\} /var/www/domains/test \;</div>
-            <div>chown -R apache:apache /var/www/domains/test</div></pre>
+            <pre class=""><div class="ce">rm -rf /var/www/domains/test/*</div>
+            <div class="ce">find . -cmin -400 -not -path "./system/*" -not -path "./export/*" -exec cp --parents \{\} /var/www/domains/test \;</div>
+            <div class="ce">chown -R apache:apache /var/www/domains/test</div></pre>
         </div>
 
         <form method="POST">
@@ -89,7 +96,19 @@ if (!empty($_POST['cmd'])) {
         <pre><small>No result.</small></pre>
 <?php endif; ?>
     </div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+$('.ce').click(function(){
+	var text = $(this).text();
+	$('#cmd').val(text);
+	var $to = $('#cmd');
+	$("html, body").animate({ scrollTop: $to.eq(0).offset().top }, "slow");
+});
 
+</script>
 </body>
 
 </html>
