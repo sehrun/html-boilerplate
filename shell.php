@@ -67,6 +67,7 @@ if (!empty($_POST['cmd'])) {
 			<div class="ce">split -l 200000 /var/www/domains/lustram.ru/system/storage/logs/error.log /var/www/domains/lustram.ru/system/storage/logs/</div>
 			<div class="ce">grep -rn 'system/storage/logs/' -e 'extractZip'</div>
 			<div class="ce">tail -n 10 'system/storage/logs/error.log'</div>
+			<div class="ce">awk 'NR >= 4828765 && NR <= 4828820' 'system/storage/logs/error.log'</div>
 			</pre>
             <pre>find catalog -type f -print0 | xargs -0 sed -i '' -e 's/что меняем/на что меняем/g'</pre>
             <pre class=""><div class="ce">rm -rf /var/www/domains/test/*</div>
