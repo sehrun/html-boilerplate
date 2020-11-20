@@ -73,6 +73,11 @@ if (!empty($_POST['cmd'])) {
             <pre class=""><div class="ce">rm -rf /var/www/domains/test/*</div>
             <div class="ce">find . -cmin -400 -not -path "./system/*" -not -path "./export/*" -exec cp --parents \{\} /var/www/domains/test \;</div>
             <div class="ce">chown -R apache:apache /var/www/domains/test</div></pre>
+			<pre>
+				<div class="ce">du -h --max-depth=1 | sort -hr #print currect space taking use pwd &amp; cd ../</div>
+				<div class="ce">history -a #save bash history</div>
+				<div class="ce">echo $HISTFILE #print history file</div>
+			</pre>
         </div>
 
         <form method="POST">
@@ -97,6 +102,8 @@ if (!empty($_POST['cmd'])) {
         <pre><small>No result.</small></pre>
 <?php endif; ?>
     </div>
+	
+	
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
