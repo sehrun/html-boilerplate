@@ -23,7 +23,7 @@ foreach($tempArr as $item){
 <link href="/assets/style.css?<?=date('his')?>" rel="stylesheet" />
 
 <div class="hp1">
-	<div class="hp2 cw">
+	<div class="hp2 cwidth">
 
 	</div>
 </div>
