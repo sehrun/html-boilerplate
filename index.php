@@ -9,8 +9,8 @@
 <title>title</title> 
 <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <?
-$arr = ['https://fonts.gstatic.com/','https://use.fontawesome.com/'];
-foreach($arr as $item){
+$tempArr = ['https://fonts.gstatic.com/','https://use.fontawesome.com/'];
+foreach($tempArr as $item){
 ?>
 <link rel="preconnect" href="<?=$item?>" crossorigin>
 <link rel="dns-prefetch" href="<?=$item?>">
