@@ -8,11 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>title</title> 
 <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<?
+$arr = ['https://fonts.gstatic.com/','https://use.fontawesome.com/'];
+foreach($arr as $item){
+?>
+<link rel="preconnect" href="<?=$item?>" crossorigin>
+<link rel="dns-prefetch" href="<?=$item?>">
+<?}?>
 
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
-<link rel="preconnect" href="https://use.fontawesome.com/" crossorigin>
-<link rel="dns-prefetch" href="https://use.fontawesome.com/">
 
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
