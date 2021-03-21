@@ -7,6 +7,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>title</title> 
+
+
+<!-- unnecessary -->
+<meta name="description" content="xxx">
+<!-- suggest surrounding user interface -->
+<meta name="theme-color" content="#890c58">
+<!-- Open Graph -->
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="xxx"/>
+<meta property="og:description" content="xxx"/>
+<meta property="og:url" content="https://xxx"/>
+<meta property="og:site_name" content="xxx"/>
+<meta property="og:image" content="https://xxx/og.png"/>
+<!-- unnecessary -->
+
+
 <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <?
 $tempArr = ['https://fonts.gstatic.com/','https://use.fontawesome.com/'];
