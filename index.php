@@ -11,7 +11,7 @@
 
 <!-- unnecessary -->
 <meta name="description" content="xxx">
-<!-- suggest surrounding user interface -->
+<!-- https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
 <meta name="theme-color" content="#xxx">
 <!-- Open Graph -->
 <meta property="og:locale" content="ru_RU"/>
