@@ -12,7 +12,7 @@
 <!-- unnecessary -->
 <meta name="description" content="xxx">
 <!-- suggest surrounding user interface -->
-<meta name="theme-color" content="#890c58">
+<meta name="theme-color" content="#xxx">
 <!-- Open Graph -->
 <meta property="og:locale" content="ru_RU"/>
 <meta property="og:type" content="website"/>
