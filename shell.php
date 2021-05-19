@@ -59,6 +59,7 @@ if (!empty($_POST['cmd'])) {
 			<div class="ce"><?=__DIR__;?></div>
 			<div class="ce">grep -rn --include=\*.php 'wp-content' -e 'Template Name'</div>
 			<div class="ce">grep -rn 'catalog' -e 'xxx'</div>
+			<div class="ce">find . -name '*.jpg' -o -name '*.png' -print</div>
 			<div class="ce">find '/etc/' -name '*.conf'</div>
 			<div class="ce">zip -qr filename.zip folderToZipPath</div>
 			<div class="ce">zip -qr ./filename.zip './local/templates'</div>
