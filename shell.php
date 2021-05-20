@@ -63,7 +63,7 @@ if (!empty($_POST['cmd'])) {
 			<div class="ce">find '/etc/' -name '*.conf'</div>
 			<div class="ce">zip -qr filename.zip folderToZipPath</div>
 			<div class="ce">zip -qr ./filename.zip './local/templates'</div>
-			<div class="ce">find . -cmin -400 -print | zip newZipFile.zip -@</div>
+			<div class="ce">find . -cmin -400 -print | zip ./filename.zip -@</div>
 			<div class="ce">unzip -o filename.zip -d temp -x '\.*' '*/\.*'; echo $?</div>
 			<div class="ce">grep -rn 'system/storage/logs/' -e 'extractZip'</div>
 			<div class="ce">tail -n 10 'system/storage/logs/error.log'</div>
