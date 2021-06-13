@@ -39,19 +39,21 @@ foreach($tempArr as $item){
 
 <link href="/assets/style.css?<?=date('his')?>" rel="stylesheet" />
 
-<div class="hp1">
-	<div class="hp2 cwidth">
+<body>
+<div class="root">
 
+	<div class="hp1">
+		<div class="hp2 cwidth">
+
+		</div>
 	</div>
+
 </div>
-
-
-
-
 
 
 <script src="/assets/script.js?<?=date('his')?>"></script>
 
+</body>
 </html>
 
 	
