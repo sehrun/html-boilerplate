@@ -26,7 +26,7 @@
 
 <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <?
-$tempArr = ['https://fonts.gstatic.com/','https://use.fontawesome.com/'];
+$tempArr = ['https://fonts.gstatic.com/','https://use.fontawesome.com/','https://code.jquery.com'];
 foreach($tempArr as $item){
 ?>
 <link rel="preconnect" href="<?=$item?>" crossorigin>
